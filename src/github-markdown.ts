@@ -53,7 +53,7 @@ const generateMarkdownReport = async ({
 
   const templateName: string =
     commitSha && !compressOnly
-      ? 'inline-pr-comment-with-diff.md'
+      ? 'pr-comment-minimal.md'
       : 'pr-comment.md'
 
   const markdown = await template(templateName, {
